@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>SIJUKI - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-box">
+    <h2>SIJUKI</h2>
+    <p class="subtitle">
+        Sistem Informasi Jujur & Islami<br>
+        Pembelajaran Tentang Surga
+    </p>
+
+    <label>Username</label>
+    <input type="text" id="username" placeholder="Masukkan username">
+
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Masukkan password">
+
+    <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login() {
+    let u = document.getElementById("username").value;
+    let p = document.getElementById("password").value;
+
+    if (u === "juki" && p === "juki23") {
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Username atau Password salah!");
+    }
+}
+</script>
+
+</body>
+</html>
