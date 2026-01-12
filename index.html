@@ -23,13 +23,22 @@
 
     <button onclick="login()">Login</button>
 </div>
-
 <script>
+const users = [
+    { username: "juki", password: "juki23" },
+    { username: "iza", password: "iza" },
+    { username: "ubi", password: "ubi" }
+];
+
 function login() {
     let u = document.getElementById("username").value;
     let p = document.getElementById("password").value;
 
-    if (u === "juki" && p === "juki23") {
+    let validUser = users.find(user => 
+        user.username === u && user.password === p
+    );
+
+    if (validUser) {
         window.location.href = "dashboard.html";
     } else {
         alert("Username atau Password salah!");
