@@ -104,3 +104,26 @@ header {
     display: block;       
     margin: 0 auto 8px;   
 }
+.menu-container {
+    display: grid;
+    gap: 16px;
+}
+
+.menu-box {
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+    border-radius: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.blue { background: #3b82f6; }
+.green { background: #22c55e; }
+.orange { background: #f59e0b; }
+.purple { background: #8b5cf6; }
+
+.icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
